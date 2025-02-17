@@ -10,6 +10,10 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 *target
+<<<<<<< HEAD
+=======
+
+>>>>>>> jira-db-scripts
 # Package Files #
 *.jar
 *.war
