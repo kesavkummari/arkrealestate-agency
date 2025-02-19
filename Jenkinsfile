@@ -76,6 +76,7 @@ pipeline {
                 sh 'curl --retry-delay 10 --retry 5 "http://54.166.230.167:8080/devops"'
             }
         }
-*/
+
     }
+    */
 }
