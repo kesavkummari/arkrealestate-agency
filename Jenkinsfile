@@ -4,8 +4,9 @@ pipeline {
         maven 'maven'
         jdk 'java'
     }
-/*    
+    
     stages {
+        /*
         stage('Stage-0 : Static Code Analysis Using SonarQube') { 
             steps {
                 script {
@@ -16,7 +17,8 @@ pipeline {
                 }
             }
         }
-*/
+        */
+
         stage('Stage-1 : Clean') { 
             steps {
                 sh 'mvn clean'
@@ -64,19 +66,22 @@ pipeline {
                 sh 'mvn deploy'
             }
         }
-
+   */
+        /*
         stage('Stage-9 : Deployment - Deploy an Artifact devops-3.0.0-SNAPSHOT.war file to Tomcat Server') { 
             steps {
                 sh 'curl -u admin:Str0ngAdminPassw3rd -T target/**.war "http://54.166.230.167:8080/manager/text/deploy?path=/devops&update=true"'
             }
         } 
-
+   */
+        /*
         stage('Stage-10 : SmokeTest') { 
             steps {
                 sh 'curl --retry-delay 10 --retry 5 "http://54.166.230.167:8080/devops"'
             }
         }
+           */
 
     }
-    */
+ 
 }
