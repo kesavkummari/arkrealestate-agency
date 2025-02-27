@@ -31,8 +31,8 @@
     
         <snapshotRepository>
             <id>snapshots</id>
-            <name>ark-libs-release-local</name>
-            <url>http://18.60.42.89:8081/artifactory/ark-libs-release-local/</url>
+            <name>ark-libs-snapshots-local</name>
+            <url>http://18.60.42.89:8082/artifactory/ark-libs-snapshots-local/</url>
         </snapshotRepository>
     
     </distributionManagement>
