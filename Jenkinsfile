@@ -6,7 +6,7 @@ pipeline {
     }
     
     stages {
-        /*
+   
         stage('Stage-0 : Static Code Analysis Using SonarQube') { 
             steps {
                 script {
@@ -17,7 +17,6 @@ pipeline {
                 }
             }
         }
-        */
 
         stage('Stage-1 : Clean') { 
             steps {
