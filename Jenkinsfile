@@ -59,13 +59,13 @@ pipeline {
                 sh 'mvn package'
             }
         }
-/*
+
         stage('Stage-8 : Deploy an Artifact to Artifactory Manager i.e. Nexus/Jfrog') { 
             steps {
                 sh 'mvn deploy'
             }
         }
-   */
+
         /*
         stage('Stage-9 : Deployment - Deploy an Artifact devops-3.0.0-SNAPSHOT.war file to Tomcat Server') { 
             steps {
