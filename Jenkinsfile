@@ -6,7 +6,7 @@ pipeline {
     }
     
     stages {
-   
+   /*
         stage('Stage-0 : Static Code Analysis Using SonarQube') { 
             steps {
                 script {
@@ -17,6 +17,13 @@ pipeline {
                 }
             }
         }
+*/
+         stage('Stage-0 : Static Code Analysis Using SonarQube') { 
+           steps {
+                sh 'mvn clean verify sonar:sonar'
+            }
+        }
+
 
         stage('Stage-1 : Clean') { 
             steps {
@@ -66,20 +73,16 @@ pipeline {
             }
         }
 
-        /*
-        stage('Stage-9 : Deployment - Deploy an Artifact devops-3.0.0-SNAPSHOT.war file to Tomcat Server') { 
+        stage('Stage-9 : Deployment - Deploy an Artifact ArkRealEstate-1.1.0-snapshot.war file to Tomcat Server') { 
             steps {
-                sh 'curl -u admin:Str0ngAdminPassw3rd -T target/**.war "http://54.166.230.167:8080/manager/text/deploy?path=/devops&update=true"'
+                sh 'curl -u admin:redhat@123 -T target/**.war "http://18.60.222.133:8080/manager/text/deploy?path=/arkrealestate&update=true"'
             }
         } 
-   */
-        /*
         stage('Stage-10 : SmokeTest') { 
             steps {
-                sh 'curl --retry-delay 10 --retry 5 "http://54.166.230.167:8080/devops"'
+                sh 'curl --retry-delay 10 --retry 5 "http://18.60.222.133:8080/arkrealestate"'
             }
         }
-           */
 
     }
  
