@@ -14,7 +14,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
 
-        <sonar.host.url>http://40.192.36.196:9000</sonar.host.url>
+        <sonar.host.url>http://40.192.39.87:9000</sonar.host.url>
         <sonar.organization>arkrealestate-agency</sonar.organization>
         <sonar.projectKey>arkrealestate-agency</sonar.projectKey>
         <sonar.login>sqp_e0ea8ecf4f0bbddd35ad17ff44e21b8d5f88e2b2</sonar.login>       
@@ -26,13 +26,13 @@
         <repository>
             <id>release</id>
             <name>ark-libs-release-local</name>
-            <url>http://18.60.42.89:8081/artifactory/ark-libs-release-local/</url>
+            <url>http://18.60.200.177:8081/artifactory/ark-libs-release-local/</url>
         </repository>
     
         <snapshotRepository>
             <id>snapshots</id>
             <name>ark-libs-snapshots-local</name>
-            <url>http://18.60.42.89:8082/artifactory/ark-libs-snapshots-local/</url>
+            <url>http://18.60.200.177:8082/artifactory/ark-libs-snapshots-local/</url>
         </snapshotRepository>
     
     </distributionManagement>
