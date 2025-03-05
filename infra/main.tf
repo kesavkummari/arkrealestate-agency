@@ -1,6 +1,12 @@
-provider "aws" {
-  region = var.aws_region
+
+terraform {
+  backend "s3" {
+    bucket = "9281430306"
+    key    = "tf-statefiles/ark-terraform.tfstate"
+    region = "ap-south-2"
+  }
 }
+
 
 resource "aws_instance" "web" {
   ami                    = var.ami_id
