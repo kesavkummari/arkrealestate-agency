@@ -12,5 +12,6 @@ resource "aws_instance" "web" {
 
   tags = {
     Name = var.instance_name
+    Created = var.createdby
   }
 }

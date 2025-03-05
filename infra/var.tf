@@ -7,7 +7,7 @@ variable "aws_region" {
 variable "ami_id" {
   description = "AMI ID for the EC2 instance"
   type        = string
-  default     = "ami-12345678" # Change this to a valid AMI ID
+  default     = "ami-0e386fa0b67b8b12c" # Change this to a valid AMI ID
 }
 
 variable "instance_type" {
@@ -18,21 +18,25 @@ variable "instance_type" {
 
 variable "key_name" {
   description = "Name of the SSH key pair"
-  type        = string
+  type        = digitaladdds-wordpress
 }
 
 variable "security_group_id" {
   description = "Security Group ID for the EC2 instance"
-  type        = string
+  type        = sg-010d6dd8270554a09
 }
 
 variable "subnet_id" {
   description = "Subnet ID where the EC2 instance will be launched"
-  type        = string
+  type        = subnet-0ab7ef12823c1b8c3
 }
 
 variable "instance_name" {
   description = "Tag Name for the EC2 instance"
   type        = string
-  default     = "MyTerraformInstance"
+  default     = "ArkRealEstate"
+}
+
+variable "createdby" {
+  default = "IaC-Terraform"
 }
