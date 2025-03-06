@@ -1,4 +1,3 @@
-
 terraform {
   backend "s3" {
     bucket = "9281430306"
@@ -6,8 +5,6 @@ terraform {
     region = "ap-south-2"
   }
 }
-
-
 resource "aws_instance" "web" {
   ami                    = var.ami_id
   instance_type          = var.instance_type
