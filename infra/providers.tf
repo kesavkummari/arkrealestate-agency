@@ -1,5 +1,5 @@
 provider "aws" {
   # Configuration options
   profile = "default"
-  region = "ap-south-2"
+  region  = "ap-south-2"
 }

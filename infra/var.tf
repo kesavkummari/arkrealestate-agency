@@ -1,7 +1,7 @@
 variable "aws_region" {
   description = "AWS Region"
   type        = string
-  default     = "us-east-1"
+  default     = "ap-south-2"
 }
 
 variable "ami_id" {
@@ -13,22 +13,25 @@ variable "ami_id" {
 variable "instance_type" {
   description = "EC2 instance type"
   type        = string
-  default     = "t2.micro"
+  default     = "t3.micro"
 }
 
 variable "key_name" {
   description = "Name of the SSH key pair"
-  type        = digitaladdds-wordpress
+  type        = string
+  default     = "digitaladdds-wordpress"
 }
 
 variable "security_group_id" {
   description = "Security Group ID for the EC2 instance"
-  type        = sg-010d6dd8270554a09
+  type        = list(any)
+  default     = ["sg-010d6dd8270554a09"]
 }
 
 variable "subnet_id" {
   description = "Subnet ID where the EC2 instance will be launched"
-  type        = subnet-0ab7ef12823c1b8c3
+  type        = string
+  default     = "subnet-0ab7ef12823c1b8c3"
 }
 
 variable "instance_name" {
